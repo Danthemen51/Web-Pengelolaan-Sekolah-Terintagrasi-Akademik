@@ -1,0 +1,213 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(228, 228, 228);
+    scroll-behavior: smooth;
+    /* adds smooth scrolling effect globally */
+}
+
+.navbar-navy {
+    background-color: #87cefa;
+}
+
+.navbar-navy .nav-link,
+.navbar-navy .navbar-brand {
+    color: #fff;
+}
+
+.navbar-navy .nav-link:hover {
+    color: #ccc;
+}
+
+/* Penyesuaian teks brand di navbar agar presisi */
+.brand-text {
+    margin: 0;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+/* Khusus untuk tampilan HP (layar kecil) */
+@media (max-width: 576px) {
+    .brand-text {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .navbar-brand {
+        gap: 8px;
+        max-width: 75%;
+    }
+}
+
+/* .nav-link {
+    transition: all;
+    transition-duration: 500ms;
+} */
+
+.nav-link:hover {
+    color: rgb(54, 54, 132);
+}
+
+.navbottom {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbottom a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 6px 16px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.navbottom a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #87cefa;
+}
+
+@media (max-width: 576px) {
+    .navbottom {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 16px;
+        border-radius: 30px;
+        max-width: 95%;
+    }
+
+    .navbottom a {
+        padding: 5px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+.scroll-target {
+    scroll-margin-top: 80px;
+}
+
+@media (max-width: 992px) {
+    .yt iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-navy {
+    background-color: #000050;
+    border: none;
+    transition: all 0.3s;
+    color: white;
+}
+
+.btn-navy:hover {
+    background-color: #000050;
+    transform: scale(1.02);
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.banner-berita {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/bibdalam3.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+    width: 100%;
+    height: 300px; 
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.banner-berita h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.visimisi-card-text {
+    text-align: justify;
+}
+
+.custom.card {
+    position: relative;
+    border-radius: 15px;
+}
+
+.custom.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 5px;
+    background-color: #0d6efd;
+    border-radius: 10px;
+}
+
+.bg-navy {
+    background-color: #000050;
+    color: white;
+}
+
+.card-text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-zoom:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
